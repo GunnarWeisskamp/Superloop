@@ -22,8 +22,8 @@ namespace APINUnitTests
                             .Build();
             BASE_URL = Configuration["BaseURL"];
         }
-        [Test]
-        public void APIGetUserNameById()
+        [Test, Order(1)]
+        public void APIAddNewToDoItem()
         {
             //Test - this test simply creates a new user
             ToDo bodyObject = new ToDo();
@@ -40,6 +40,23 @@ namespace APINUnitTests
             returnedResponse = returnedResponse.Replace('\\', ' ');
             ResultAPI result = JsonConvert.DeserializeObject<ResultAPI>(returnedResponse);    
             Assert.That(result.EndMessage, Is.EqualTo(Configuration["ResultAnswer"]));
+        }
+
+        [Test, Order(2)]
+        public void APIGetNewToDoItemById()
+        {
+            //Test - This test is used to see if we have a certain user in the in memory database
+            //       we should have the record as it was created in the above test.
+            RestClient client = new RestClient(BASE_URL);
+            RestRequest request = new RestRequest(Configuration["GetToDoByID"], Method.GET);
+            IRestResponse response = client.Execute(request);
+            var returnedResponse = new JsonDeserializer().Deserialize<string>(response);
+
+            returnedResponse = returnedResponse.Replace('\\', ' ');
+            ToDo retObject = JsonConvert.DeserializeObject<ToDo>(returnedResponse);
+
+
+            Assert.That(retObject.Name, Is.EqualTo(Configuration["Name"]));
         }
     }
 }

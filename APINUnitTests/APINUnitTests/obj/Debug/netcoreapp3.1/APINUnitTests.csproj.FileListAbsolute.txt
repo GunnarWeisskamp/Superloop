@@ -94,7 +94,6 @@ C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debu
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debug\netcoreapp3.1\RestSharp.dll
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\obj\Debug\netcoreapp3.1\APINUnitTests.dll
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\obj\Debug\netcoreapp3.1\APINUnitTests.pdb
-C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debug\netcoreapp3.1\APINUnitTests.dll.config
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\gulla\OneDrive\Documents\Superloop\APINUnitTests\APINUnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll

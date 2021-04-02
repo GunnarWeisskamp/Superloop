@@ -7,6 +7,7 @@ Project is made up of 5 main folders
 2 - APINUnitTests 
     (a) Uses RestSharp for the API test call
     (b) NUnit tests employed
+    (c) Two tests are employed. A Get and Post
 
 3 - DAO 
     (a) Uses Entiry Framework in memory (b) .Net Core 3.1
