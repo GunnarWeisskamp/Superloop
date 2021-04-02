@@ -1,0 +1,8 @@
+{
+    "BaseURL": "https://localhost:44384/api",
+    "Name": "Sam",
+    "Description": "Sam test against",
+    "Status": "false",
+    "AddToListURL": "ToDoAdd/AddToDoList?item=",
+    "ResultAnswer": "Item Inserted"
+}
