@@ -17,7 +17,6 @@ namespace APINUnitTests
         public void Setup()
         {
             Configuration = new ConfigurationBuilder()
-                            //.SetBasePath(env.ContentRootPath)
                             .AddJsonFile("config.json")
                             .Build();
             BASE_URL = Configuration["BaseURL"];
