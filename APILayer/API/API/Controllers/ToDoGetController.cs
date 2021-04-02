@@ -22,8 +22,19 @@ namespace API.Controllers
         [Route("GetToDoList")]
         public async Task<IEnumerable<ToDo>> GetToDoList()
         {
-            var items = await _IDoGet.GetToDoList();
-            return items;
+            List<ToDo> _ToDoCls = new List<ToDo>();
+            try
+            {
+                _ToDoCls = await _IDoGet.GetToDoList();
+            }
+            catch (Exception ex)
+            {
+                //something went wrong. 
+                _ToDoCls.Add(new ToDo { 
+                                        Id = 1, Description = "Error has happened please contact customer support with the following error code: " + ex.Message, 
+                                        Status = false, Name = "" });
+            }
+            return _ToDoCls;
         }
 
         [HttpGet]
